@@ -1,15 +1,17 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Inter, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 import { ScrollProgress } from "@/components/scroll-progress"
 
-const geistSans = Geist({
+// Fuente sans similar a Geist
+const geistSans = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 })
 
-const geistMono = Geist_Mono({
+// Fuente mono similar a Geist Mono
+const geistMono = JetBrains_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 })
