@@ -1,7 +1,10 @@
+import tailwindcss from "@tailwindcss/postcss";
+import autoprefixer from "autoprefixer";
+
 /** @type {import('postcss').ProcessorOptions} */
-module.exports = {
+export default {
   plugins: {
-    "@tailwindcss/postcss": {},
+    [tailwindcss]: {},
     autoprefixer: {},
   },
-}
+};
